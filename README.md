@@ -1,11 +1,14 @@
 # Simple SISO OFDM over USRP
 
-[![License: IEEE](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
+This repository is the assignment in NCTU course "Wireless Communication Systems 2018". If you are taking this course, please do not duplicate from this repository. All rights reserved.*
 
-This repository is going to run SISO OFDM with BPSK demodulation on USRP board by using the example code on [WARPLab](https://warpproject.org/trac/wiki/WARPLab/Examples/OFDM) `wl_example_siso_ofdm_txrx.m​`.
+---
+## Abstract
+
+This repository is going to run SISO OFDM with BPSK demodulation on USRP board by using the example code on [WARPLab](https://warpproject.org/trac/wiki/WARPLab/Examples/OFDM) `wl_example_siso_ofdm_txrx.m`.
 * The offical document of [USRP](https://www.ettus.com/content/files/07495_Ettus_N)
-*Notice that this repository is NCTU CS course lab of "Wireless Communication Systems 2018". If you are taking this course, please do not duplicate from this repository. All rights reserved.*
 
+---
 ## Introduction
 
 The sample code `wl_example_siso_ofdm_txrx.m​` follows the following steps.
@@ -32,7 +35,7 @@ In the part of decoding,
 6. Decode frequency samples
 7. SFO correction
 
-* Notice: The most of works can follow by my another repository - [Simple_SISO_OFDM](https://github.com/yungshenglu/Simple_SISO_OFDM).
+* **NOTICE:** The most of works can follow by my another repository - [Simple_SISO_OFDM](https://github.com/yungshenglu/Simple_SISO_OFDM).
 * USRP Driver (API)
     * About UHD
         * USRP Hardware Driver
@@ -73,16 +76,9 @@ In the part of decoding,
 * Matlab offline decoding
 
 ---
-## TODO
-
-(Update soon.)
-
----
 ## Contributor
 
-* [Yung-Sheng Lu](https://github.com/yungshenglu)
+* [David Lu](https://github.com/yungshenglu)
 
 ---
-> Notice that this repository is NCTU CS course lab of "Wireless Communication Systems 2018". If you are taking this course, please do not duplicate from this repository. All rights reserved.
-
-[![License: IEEE](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
+> **NOTCIE:** This repository is the assignment in NCTU CS course "Wireless Communication Systems 2018". If you are taking this course, please do not duplicate from this repository. All rights reserved.
