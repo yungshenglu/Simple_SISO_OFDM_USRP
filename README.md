@@ -1,6 +1,8 @@
 # Simple SISO OFDM over USRP
 
-This repository is the assignment in NCTU course "Wireless Communication Systems 2018". This repository is going to run SISO OFDM with BPSK demodulation on USRP board by using the example code on [WARPLab](https://warpproject.org/trac/wiki/WARPLab/Examples/OFDM) `wl_example_siso_ofdm_txrx.m`.
+This repository is the assignment in NCTU course "Wireless Communication Systems 2018". 
+
+In this repository, we are going to run SISO OFDM with BPSK demodulation on USRP board by using the example code on [WARPLab](https://warpproject.org/trac/wiki/WARPLab/Examples/OFDM) `wl_example_siso_ofdm_txrx.m`.
 * The offical document of [USRP](https://www.ettus.com/content/files/07495_Ettus_N)
 
 > **NOTCIE:** This repository is the assignment in NCTU course "Wireless Communication Systems 2018". If you are taking this course, please do not duplicate from this repository. All rights reserved.
