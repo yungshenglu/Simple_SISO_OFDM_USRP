@@ -8,11 +8,11 @@ This repository is the assignment in NCTU course "Wireless Communication Systems
 ---
 ## Description
 
-The sample code `wl_example_siso_ofdm_txrx.m​` follows the following steps.
+The sample code `wl_example_siso_ofdm_txrx.m` follows the following steps.
 1. Generate OFDM transmit samples
 2. Send samples via WARP or Simulation transmission
 3. Decode the received samples
-4. Calculate SNR / channels and plot
+4. Calculate SNR/channels and plot
 
 In the part of signal generation,
 1. Generate preambles
@@ -31,6 +31,8 @@ In the part of decoding,
 5. Convert time samples to frequency samples via FFT
 6. Decode frequency samples
 7. SFO correction
+
+### BPSK OFDM Simulation
 
 > **NOTICE:** The most of works can follow by my another repository - [Simple_SISO_OFDM](https://github.com/yungshenglu/Simple_SISO_OFDM).
 
