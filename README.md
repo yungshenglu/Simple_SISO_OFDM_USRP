@@ -1,15 +1,12 @@
 # Simple SISO OFDM over USRP
 
-This repository is the assignment in NCTU course "Wireless Communication Systems 2018". If you are taking this course, please do not duplicate from this repository. All rights reserved.*
-
----
-## Abstract
-
-This repository is going to run SISO OFDM with BPSK demodulation on USRP board by using the example code on [WARPLab](https://warpproject.org/trac/wiki/WARPLab/Examples/OFDM) `wl_example_siso_ofdm_txrx.m`.
+This repository is the assignment in NCTU course "Wireless Communication Systems 2018". This repository is going to run SISO OFDM with BPSK demodulation on USRP board by using the example code on [WARPLab](https://warpproject.org/trac/wiki/WARPLab/Examples/OFDM) `wl_example_siso_ofdm_txrx.m`.
 * The offical document of [USRP](https://www.ettus.com/content/files/07495_Ettus_N)
 
+> **NOTCIE:** This repository is the assignment in NCTU course "Wireless Communication Systems 2018". If you are taking this course, please do not duplicate from this repository. All rights reserved.
+
 ---
-## Introduction
+## Description
 
 The sample code `wl_example_siso_ofdm_txrx.m​` follows the following steps.
 1. Generate OFDM transmit samples
@@ -35,8 +32,9 @@ In the part of decoding,
 6. Decode frequency samples
 7. SFO correction
 
-* **NOTICE:** The most of works can follow by my another repository - [Simple_SISO_OFDM](https://github.com/yungshenglu/Simple_SISO_OFDM).
-* USRP Driver (API)
+> **NOTICE:** The most of works can follow by my another repository - [Simple_SISO_OFDM](https://github.com/yungshenglu/Simple_SISO_OFDM).
+
+* USRP driver (API)
     * About UHD
         * USRP Hardware Driver
         * C++ API
@@ -47,27 +45,33 @@ In the part of decoding,
         * This program scans the network for supported devices and prints out a list of discovered devices and their IP addresses
 
 ---
-## Environment
+## Execution
+
+### Environment
 
 ![](https://i.imgur.com/m7psyDI.png)
 
-* How to Add a New File & Compile
-    * File (Source) Directory
+### Compilation
+
+* How to add a new file and compile
+    * File (Source) directory
         * Use built in Makefile
         * Put your files in `~/uhd/host/examples/`
         * Add your filenames to the CmakeList.txt in `~/uhd/host/examples`
-    * Compile (Binary) Directory
+    * Compile (Binary) directory
         * `cd ~/uhd/host/build/examples`
         * `make`
         * The executable bin file should be in this folder after compile
-* USRP Server
+
+### Execution
+
+* USRP server
     * `mkdir wcs_trace`
     * Transimitter: `./single_tx --f=2.49 --i=128`
     * Receiver: `./single_rx --f=2.49 --i=128`
     * Received data in `./wcs_trace/rx_signals.bin`
 
----
-## BPSK OFDM over USRP
+### BPSK OFDM over USRP
 
 * Tx repetitively sends 50 symbols
 * `USE_WARPLAB_TXRX = 0` to see the simulation result
@@ -81,4 +85,8 @@ In the part of decoding,
 * [David Lu](https://github.com/yungshenglu)
 
 ---
-> **NOTCIE:** This repository is the assignment in NCTU CS course "Wireless Communication Systems 2018". If you are taking this course, please do not duplicate from this repository. All rights reserved.
+## License
+
+> **NOTCIE:** This repository is the assignment in NCTU course "Wireless Communication Systems 2018". If you are taking this course, please do not duplicate from this repository. All rights reserved.
+
+[GNU GENERAL PUBLIC LICENSE Version 3](LICENSE)

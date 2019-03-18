@@ -310,7 +310,7 @@ function [output] = signal_gen(~)
 
     
     %% David: Output files tx_data.bin, tx_syms_mat.bin, and tx_vec.bin
-    file = fopen('tx_data.bin', 'w');
+    file = fopen('../out/tx_data.bin', 'w');
     fwrite(file, tx_data, 'float');
     fclose(file);
     
@@ -319,7 +319,7 @@ function [output] = signal_gen(~)
         complex_array(2 * j - 1) = real(tx_syms(j));
         complex_array(2 * j) = imag(tx_syms(j));
     end
-    file = fopen('tx_syms_mat.bin', 'w');
+    file = fopen('../out/tx_syms_mat.bin', 'w');
     fwrite(file, complex_array, 'float');
     fclose(file);
     
@@ -328,7 +328,7 @@ function [output] = signal_gen(~)
         complex_array(2 * j - 1) = real(tx_vec(j));
         complex_array(2 * j) = imag(tx_vec(j));
     end    
-    file = fopen('tx_vec.bin', 'w');
+    file = fopen('../out/tx_vec.bin', 'w');
     fwrite(file, complex_array, 'float');
     fclose(file);
 end

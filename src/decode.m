@@ -65,17 +65,17 @@ function [phase_decoded] = decode(apply_phase_correction, apply_SFO_correction)
     
     
     %% David: Load files tx_data.bin, tx_syms_mat.bin, tx_vec.bin, and rx_signals.bin
-    file = fopen('tx_data.bin', 'rb');
+    file = fopen('../out/tx_data.bin', 'rb');
     tx_data = fread(file, 'float');
     tx_data = tx_data.';
     fclose(file);
 
-    tx_syms = read_complex_binary('tx_syms_mat.bin');
+    tx_syms = read_complex_binary('../out/tx_syms_mat.bin');
     tx_syms = tx_syms.';
     tx_syms_mat = reshape(tx_syms, length(SC_IND_DATA), N_OFDM_SYMS);
 
-    tx_vec = read_complex_binary('tx_vec.bin');
-    rx_vec_air = read_complex_binary('rx_signals.bin');
+    tx_vec = read_complex_binary('../out/tx_vec.bin');
+    rx_vec_air = read_complex_binary('../out/rx_signals.bin');
     % end
     
     
