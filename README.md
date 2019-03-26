@@ -1,6 +1,6 @@
 # Simple SISO OFDM over USRP
 
-In this repository, we are going to implement SISO OFDM with BPSK demodulation on USRP by using the example code on [WARPLab](https://warpproject.org/trac/wiki/WARPLab/Examples/OFDM) `wl_example_siso_ofdm_txrx.m`. Besides, you can get more information from my previous repository - [Simple SISO OFDM](https://github.com/yungshenglu/Simple_SISO_OFDM).
+In this repository, we are going to implement SISO OFDM with BPSK demodulation on USRP by using the example code on [WARPLab](https://warpproject.org/trac/wiki/WARPLab/Examples/OFDM) `wl_example_siso_ofdm_txrx.m`. Besides, you can get more information about SISO OFDM with BPSK demodulation from my previous repository - [Simple SISO OFDM](https://github.com/yungshenglu/Simple_SISO_OFDM).
 * The offical document of [USRP](https://www.ettus.com/content/files/07495_Ettus_N)
 
 > **NOTCIE:** This repository is the assignment in NCTU course "Wireless Communication Systems 2018". If you are taking this course, please do not duplicate from this repository. All rights reserved.
