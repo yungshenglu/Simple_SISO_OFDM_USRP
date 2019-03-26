@@ -1,7 +1,5 @@
 # Simple SISO OFDM over USRP
 
-This repository is the assignment in NCTU course "Wireless Communication Systems 2018". 
-
 In this repository, we are going to run SISO OFDM with BPSK demodulation on USRP board by using the example code on [WARPLab](https://warpproject.org/trac/wiki/WARPLab/Examples/OFDM) `wl_example_siso_ofdm_txrx.m`.
 * The offical document of [USRP](https://www.ettus.com/content/files/07495_Ettus_N)
 
@@ -29,7 +27,7 @@ In the part of decoding,
 1. Packet detection
 2. CFO correction (useless in simulation)
 3. Channel estimation
-4. Remove CP
+4. Remove CP (Cyclic Prefix)
 5. Convert time samples to frequency samples via FFT
 6. Decode frequency samples
 7. SFO correction
@@ -42,8 +40,8 @@ In the part of decoding,
     * About UHD
         * USRP Hardware Driver
         * C++ API
-        * http://files.ettus.com/manual
-        * https://github.com/EttusResearch/uhd
+        * [USRP Hardware Driver and USRP Manual](http://files.ettus.com/manual)
+        * [GitHub Repo - EttusResearch/uhd](https://github.com/EttusResearch/uhd)
     * Locating devices
         * `host/build/utils/uhd_find_devices --args "addr=192.168.10.14"`
         * This program scans the network for supported devices and prints out a list of discovered devices and their IP addresses
@@ -81,10 +79,12 @@ In the part of decoding,
 * `USE_WARPLAB_TXRX = 0` to see the simulation result
 * Set `MOD_ORDER = 2` to use BPSK modulation
 * Rx receives at least one batch of 50 symbols
-* Matlab offline decoding
+* MATLAB offline decoding
 
 ---
 ## Contributor
+
+> **NOTICE:** You can follow the contributing process [CONTRIBUTING.md](CONTRIBUTING.md) to join me. I am very welcome any issue!
 
 * [David Lu](https://github.com/yungshenglu)
 
