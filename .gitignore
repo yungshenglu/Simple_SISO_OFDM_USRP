@@ -1,6 +1,6 @@
 
-# Created by https://www.gitignore.io/api/c++,matlab
-# Edit at https://www.gitignore.io/?templates=c++,matlab
+# Created by https://www.gitignore.io/api/c++,matlab,visualstudiocode
+# Edit at https://www.gitignore.io/?templates=c++,matlab,visualstudiocode
 
 ### C++ ###
 # Prerequisites
@@ -66,4 +66,16 @@ codegen/
 # Octave session info
 octave-workspace
 
-# End of https://www.gitignore.io/api/c++,matlab
+### VisualStudioCode ###
+.vscode/*
+.vscode
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+
+# End of https://www.gitignore.io/api/c++,matlab,visualstudiocode
